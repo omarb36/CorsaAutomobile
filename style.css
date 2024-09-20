@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* BARRE DE NAVIGATION */
+
+header {
+    width: 100%;
+    height: 100Vh;
+    position: relative;
+    overflow: hidden;
+}
+
+
+header #background-video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(40%);
+    pointer-events: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px 40px 20px 40px;
+    background-color: #0000001c;
+    backdrop-filter: blur(30px);
+    z-index: 3;
+}
+
+nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+nav .logo h1{
+    margin-left: 10px;
+    color: #ECECEC;
+    font-size: 32px;
+    font-weight: 500;
+
+}
+
+nav .logo img{
+    width: 50px;
+}
+
+nav .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav .links a{
+    text-decoration: none;
+    color: #ECECEC;
+    margin-left: 32px;
+    font-size: 16px;
+}
+
+nav .links a:hover{
+    color: #bababa;
+    transition: 0.3s;
+}
+
+
+nav .boutton-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+
+.container-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 80Vh;
+}
+
+.container-parent .text-header {
+    padding: 100px 40px 0px 40px;
+}
+
+.container-parent h1 {
+    color: #ECECEC;
+    letter-spacing: -3%;
+    font-weight: 500;
+    font-size: 40px;
+    padding-bottom: 24px;
+}
+
+.container-parent p {
+    color: rgba(236, 236, 236, 0.95);
+    font-size: 16px;
+    padding-bottom: 24px;
+}
+
+.container-parent #button-decouvrir {
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.container-parent #button-decouvrir:hover{
+    background-color:  inherit;
+    color: #ECECEC;
+    border: 1px solid #ECECEC;
+    transition: 0.3s;
+}
+
+/* SECTION CARTES */
+
+
+#section-cartes {
+    width: 100%;
+    height: 100%;
+    background-color: #000000e4;
+    padding-bottom: 50px;
+}
+
+.text-bienvenue .h1-bienvenue{
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    color: #ECECEC;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+#section-cartes .container-cartes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 200px 30px 200px;
+    color: #ECECEC;
+    
+}
+
+.container-cartes .api-constructeur {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 650px;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.137) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.api-constructeur:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+    transition: 0.3s;
+}
+
+.container-cartes img{
+    width: 150px;
+}
+
+.container-cartes .nom{
+    font-size: 34px;
+    padding-bottom: 10px;
+}
+
+.container-cartes .creation{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.container-cartes .fondateur{
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.container-cartes .usines{
+    font-size: 16px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.container-cartes .usines li{
+    
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.container-cartes .api-constructeur .voiture-lien{
+    color: #ECECEC;
+    text-decoration: none;
+}
+
+/* PAGE VOITURES RENAULT */
+
+.voiture-1-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000e4;
+    width: 100%;
+    height: 80Vh;
+}
+
+.voiture-1-header .modele-1{
+    padding: 20px;
+}
+
+.voiture-1-header .modele-1 .image-voiture-1{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+
+}
+
+.voiture-1-header .modele-1 .nom-modele-1, .annee-1, .productions-1, .constructeur-1{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+
+.voiture-1-header .modele-2{
+    padding: 20px;
+}
+
+.voiture-1-header .modele-2 .image-voiture-2{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+}
+
+.voiture-1-header .modele-2 .nom-modele-2, .annee-2, .productions-2, .constructeur-2{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+.voiture-1-header .modele-3{
+    padding: 20px;
+}
+
+.voiture-1-header .modele-3 .image-voiture-3{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+}
+
+.voiture-1-header .modele-3 .nom-modele-3, .annee-3, .productions-3, .constructeur-3{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+.voiture-1-header .voir-fiat{
+    border: none;
+}
+
+/* PAGE VOITURES FIAT */
+
+.voiture-2-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000e4;
+    
+    width: 100%;
+    height: 80Vh;
+}
+
+.voiture-2-header .modele-1{
+    padding: 20px;
+}
+
+.voiture-2-header .modele-1 .image-voiture-1{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+}
+
+.voiture-2-header .modele-1 .nom-modele-1, .annee-1, .productions-1, .constructeur-1{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+
+.voiture-2-header .modele-2{
+    padding: 20px;
+}
+
+.voiture-2-header .modele-2 .image-voiture-2{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+}
+
+.voiture-2-header .modele-2 .nom-modele-2, .annee-2, .productions-2, .constructeur-2{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+/* PAGE VOITURES BMW */
+
+.voiture-3-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000000e4;
+    
+    width: 100%;
+    height: 80Vh;
+}
+
+.voiture-3-header .modele-1{
+    padding: 20px;
+}
+
+.voiture-3-header .modele-1 .image-voiture-1{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+}
+
+.voiture-3-header .modele-1 .nom-modele-1, .annee-1, .productions-1, .constructeur-1{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+
+.voiture-3-header .modele-2{
+    padding: 20px;
+}
+
+.voiture-3-header .modele-2 .image-voiture-2{
+    width: 500px;
+    height: 269px;
+    border-radius: 25px;
+}
+
+.voiture-3-header .modele-2 .nom-modele-2, .annee-2, .productions-2, .constructeur-2{
+    color: #ECECEC;
+    margin-top: 10px;
+}
+
+.button-voir-voiture .voir-button {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    background-color: #ECECEC;
+    border: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;  
+}
+
+.button-voir-voiture .voir-button:hover {
+    background-color: rgb(181, 181, 181);
+    transition: 0.3s;
+}
+
+.button-voir-voiture .voir-button img {
+    width: 20px;
+    margin-left: 3px;
+}
+
+/* FOOTER */
+
+footer .contenu-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20Vh;
+    background-color: black;
+}
+
+.contenu-footer .droits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.contenu-footer .droits img {
+    width: 40px;
+}
+
+.contenu-footer .droits h1 {
+    font-size: 19px;
+    color: #ECECEC;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+
+.contenu-footer .links-parent ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+}
+
+.contenu-footer .links-parent a{
+    color: #ECECEC;
+    text-decoration: none;
+    margin-right: 34px;
+}
+.contenu-footer .links-parent a:hover{
+    color: #bababa;
+    transition: 0.3s;
+}
+
+
+/* PAGE CRÉDITS */
+
+.credits-header #background-video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(30%);
+    pointer-events: none;
+    transform: scale(1.5);
+}
+
+.section-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100Vh;
+    color: #ECECEC;
+}
+
+.section-credits .developpeur h1 {
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.section-credits .developpeur p{
+    padding: 20px 20px;
+}
+
+.section-credits .technos ul {
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.section-credits .sources-api ul {
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.section-credits .sources-api a {
+    color: #ECECEC;
+    
+}
+
+.section-credits .sources-api a:hover {
+    color: #adadad;
+    transition: 0.3s;
+}
+
+/* PAGE À PROPOS */
+
+.apropos-header #background-video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(30%);
+    pointer-events: none;
+    transform: scale(1.5);
+}
+
+.section-apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100Vh;
+}
+
+.section-apropos .titre h1 {
+    font-size: 34px;
+    color: #ECECEC;
+    padding-bottom: 40px;
+}
+
+
+.section-apropos .paragraph p {
+    font-size: 18px;
+    color: #ECECEC;
+    padding-bottom: 40px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+/* RESPONSIVES */
+
+/* NAV BAR RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        position: static;
+    }
+
+    nav .links{
+        margin-top: 20px;
+    }
+
+    nav #button-decouvrir {
+        display: none;
+    }
+
+/* CONTAINER CARTES RESPONSIVES */
+
+    .container-parent {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #section-cartes .h1-bienvenue {
+        font-size: 24px;
+    }
+
+
+}
