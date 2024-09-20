@@ -83,12 +83,46 @@ nav .links a:hover{
 }
 
 
-nav .boutton-navbar {
+nav .bouttons-navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
+}
+
+nav #button-inscription{
+    background-color: #ECECECEC;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+nav #button-inscription:hover{
+    background-color: inherit;
+    border: 1px solid #ECECEC;
+    color: #ECECEC;
+    transition: 0.3s;
+}
+
+nav #button-connexion{
+    background-color: inherit;
+    border: 1px solid #ECECEC;
+    color: #ECECEC;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+nav #button-connexion:hover{
+    background-color: #ECECEC;
+    color: #000000;
+    transition: 0.3s;
 }
 
 /* HEADER */
@@ -120,7 +154,7 @@ nav .boutton-navbar {
 }
 
 .container-parent #button-decouvrir {
-    padding: 8px 20px 8px 20px;
+    padding: 8px 20px;
     border: none;
     border-radius: 50px;
     font-size: 16px;
