@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/constructeurautomobile/style/style.css">
     <title>CorsaAutomobile / Fiat</title>
 </head>
-<body>
+<body class="body-voiture">
     
 <!-- BARRE DE NAVIGATION -->
 
@@ -19,14 +19,17 @@
 <main>
 
     
-
-    <header class="voiture-2-header">
-
-        <div class="button-voir-voiture">
+<div class="button-voir-voiture">
             <form action="/constructeurautomobile/voiture-1.php">
                 <button class="voir-button"><img src="https://img.icons8.com/?size=100&id=7811&format=png&color=000000" alt="">Voir Renault</button>
             </form>
+
+            <form action="/constructeurautomobile/voiture-3.php">
+                <button class="voir-button">Voir BMW <img src="https://img.icons8.com/?size=100&id=7789&format=png&color=000000" alt=""> </button>
+            </form>
         </div>
+
+    <header class="voiture-2-header">
 
         <div class="modele-1">
             <img class="image-voiture-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Grande_punto_5tuerer.jpg/560px-Grande_punto_5tuerer.jpg" alt="">
@@ -44,13 +47,8 @@
             <p class="constructeur-2">5 constructeur</p>
         </div>
 
-        <div class="button-voir-voiture">
-            <form action="/constructeurautomobile/voiture-3.php">
-                <button class="voir-button">Voir BMW <img src="https://img.icons8.com/?size=100&id=7789&format=png&color=000000" alt=""> </button>
-            </form>
-        </div>
-
     </header>
+    
 </main>
 
 <?php include 'components/footer.html'; ?>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/constructeurautomobile/style/style.css">
     <title>CorsaAutomobile / Renault</title>
 </head>
-<body>
+<body class="body-voiture">
     
 <!-- BARRE DE NAVIGATION -->
 
@@ -17,7 +17,11 @@
 <!-- SECTION VOITURES -->
 
 <main>
-
+        <div class="button-voir-voiture">
+            <form action="/constructeurautomobile/voiture-2.php">
+                <button class="voir-button">Voir Fiat<img src="https://img.icons8.com/?size=100&id=7789&format=png&color=000000" alt=""></button>
+            </form>
+        </div>
     
 
     <header class="voiture-1-header">
@@ -47,12 +51,7 @@
         </div>
 
         
-        <div class="button-voir-voiture">
-            <form action="/constructeurautomobile/voiture-2.php">
-                <button class="voir-button">Voir Fiat<img src="https://img.icons8.com/?size=100&id=7789&format=png&color=000000" alt=""></button>
-                
-            </form>
-        </div>
+        
 
     </header>
 </main>

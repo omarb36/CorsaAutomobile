@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/constructeurautomobile/style/style.css">
     <title>CorsaAutomobile / BMW</title>
 </head>
-<body>
+<body class="body-voiture">
     
 <!-- BARRE DE NAVIGATION -->
 
@@ -17,14 +17,13 @@
 <!-- SECTION VOITURES -->
 
 <main>
-
-    <header class="voiture-3-header">
-
-    <div class="button-voir-voiture">
+        <div class="button-voir-voiture">
             <form action="/constructeurautomobile/voiture-2.php">
                 <button class="voir-button"><img src="https://img.icons8.com/?size=100&id=7811&format=png&color=000000" alt=""> Voir Fiat</button>
             </form>
         </div>
+
+    <header class="voiture-3-header">
 
         <div class="modele-1">
             <img class="image-voiture-1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/BMW_E21_front_20080331.jpg/560px-BMW_E21_front_20080331.jpg" alt="">

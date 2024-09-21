@@ -257,6 +257,10 @@ nav #button-connexion:hover{
 
 /* PAGE VOITURES RENAULT */
 
+.body-voiture{
+    background-color: #000000;
+}
+
 .voiture-1-header {
     display: flex;
     flex-direction: row;
@@ -264,9 +268,10 @@ nav #button-connexion:hover{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #000000e4;
+    padding-top: 50px;
+    background-color: #000000;
     width: 100%;
-    height: 80Vh;
+    height: 100%;
 }
 
 .voiture-1-header .modele-1{
@@ -410,6 +415,15 @@ nav #button-connexion:hover{
 .voiture-3-header .modele-2 .nom-modele-2, .annee-2, .productions-2, .constructeur-2{
     color: #ECECEC;
     margin-top: 10px;
+}
+
+.button-voir-voiture{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
 }
 
 .button-voir-voiture .voir-button {
