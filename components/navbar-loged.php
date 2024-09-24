@@ -19,7 +19,6 @@ session_start();
 
     <div class="user-info">
         <?php if (isset($_SESSION['pseudo']))?>
-        <span>Bienvenue <?php echo htmlspecialchars($_SESSION['pseudo']); ?></span>
         <form action="">
             <a href="../favoris.php"><img src="../img/favori.png" alt="Vos favoris"></a>
         </form>

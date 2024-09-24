@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #0000004e;
+    background-color: #000000e4;
 }
 
 .message-erreur{
@@ -130,7 +130,7 @@ header .form-inscriptiion-container form {
     background-color: #000000b0;
     padding: 100px;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.643) 0px 7px 29px 0px;
+    box-shadow: rgba(255, 255, 255, 0.137) 0px 7px 29px 0px;
 }
 
 header .form-inscriptiion-container label {
@@ -161,7 +161,7 @@ header .form-connexion-container form {
     background-color: #000000b0;
     padding: 100px;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.643) 0px 7px 29px 0px;
+    box-shadow: rgba(255, 255, 255, 0.137) 0px 7px 29px 0px;
 }
 
 header .form-connexion-container label {

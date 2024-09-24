@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #0000004e;
+    background-color: #000000e4;
 }
 
 .message-erreur{
@@ -74,6 +74,7 @@ nav .user-info {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     text-align: center;
 }
@@ -96,4 +97,136 @@ nav .user-info #deconnexion {
     font-size: 16px;
     margin-right: 15px;
     cursor: pointer;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+header h1{
+    color: #ffffff;
+    font-size: 34px;
+}
+
+header p{
+    color: #ECECEC;
+    font-size: 18px;
+    padding: 30px 0px;
+}
+
+header button{
+    background-color: #ECECECEC;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: inherit;
+    border: 1px solid #ECECEC;
+    color: #ECECEC;
+    transition: 0.3s;
+}
+
+
+header .span-user{
+    color: #ffffff84;
+    text-decoration-line: underline;
+}
+
+#section-cartes {
+    width: 100%;
+    height: 100%;
+    background-color: #000000e4;
+    padding-bottom: 50px;
+}
+
+.text-bienvenue .h1-bienvenue{
+    text-align: center;
+    padding: 100px 0px 50px 0px;
+    color: #ECECEC;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+/* LISTE DES CONSTRUCTEURS */
+
+#section-cartes .container-cartes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 200px 30px 200px;
+    color: #ECECEC;
+    
+}
+
+.container-cartes .api-constructeur {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 650px;
+    width: 300px;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 25px;
+    box-shadow: rgba(255, 255, 255, 0.137) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+
+.api-constructeur:hover {
+    background-color: rgba(255, 255, 255, 0.151);
+    transition: 0.3s;
+}
+
+.container-cartes img{
+    width: 170px;
+    margin-bottom: 30px;
+}
+
+.container-cartes .nom{
+    font-size: 34px;
+    padding-bottom: 20px;
+}
+
+.container-cartes .creation{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.container-cartes .fondateur{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.container-cartes .usines{
+    font-size: 16px;
+    padding-bottom: 5px;
+    list-style: none;
+}
+
+.container-cartes .usines li{
+    
+    padding-bottom: 10px;
+    list-style: none;
+}
+
+.container-cartes .api-constructeur .voiture-lien{
+    color: #ECECEC;
+    text-decoration: none;
 }
