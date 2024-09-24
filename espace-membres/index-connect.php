@@ -34,13 +34,14 @@ $logoscostructeurs = [
 <body>
 
 <header>
+    <img class="bg-loged" src="../img/bg-loged.jpg" alt="">
     <?php include '../components/navbar-loged.php'?>
     
     <main>
         <div class="container">
             <h1>Ravi de te revoir <span class="span-user"><?php echo htmlspecialchars($_SESSION['pseudo']);?></span> !</h1>
             <p>Voici les modèles dernièrement ajouter :</p>
-            <button>Voir</button>
+            <button id="button-voir">Voir</button>
         </div>
 </header>
 
@@ -68,6 +69,8 @@ $logoscostructeurs = [
 </section>
 
     </main>
-    
+
+
+    <script src="../main.js" defer></script>
 </body>
 </html>

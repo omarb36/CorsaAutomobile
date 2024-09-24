@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/constructeurautomobile/style/style.css">
+    <link rel="stylesheet" href="/CorsaAutomobile/style/style.css">
     <title>CorsaAutomobile / Crédits</title>
     
 </head>
 <body>
     <header class="credits-header">
         <video autoplay muted loop disablePictureInPicture id="background-video" controlsList="nodownload nofullscreen noremoteplayback">
-            <source src="/constructeurautomobile/img/revuelto.mp4" type="video/mp4">
+            <source src="/CorsaAutomobile/img/revuelto.mp4" type="video/mp4">
         </video>
         <!-- BARRE DE NAVIGATION -->
 
