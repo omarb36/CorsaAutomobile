@@ -220,22 +220,23 @@ nav #button-connexion:hover{
 }
 
 .container-cartes img{
-    width: 150px;
+    width: 170px;
+    margin-bottom: 30px;
 }
 
 .container-cartes .nom{
     font-size: 34px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .container-cartes .creation{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .container-cartes .fondateur{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .container-cartes .usines{
