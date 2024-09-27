@@ -1,11 +1,9 @@
 <?php
 session_start();
 
-// Vérifie si l'utilisateur est connecté
 if (!isset($_SESSION['id'])) {
-    // Si l'utilisateur n'est pas connecté, redirige vers la page de connexion
     header('Location: connexion.php');
-    exit(); // Stoppe l'exécution du script
+    exit();
 }
 
 $apiUrl = "https://filrouge.uha4point0.fr/V2/car/constructeurs";

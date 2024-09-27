@@ -238,3 +238,20 @@ header .span-user{
     color: #ECECEC;
     text-decoration: none;
 }
+
+
+/* PAGE FAVORIS */
+
+.favoris-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    align-items: baseline;
+    text-align: center;
+    padding: 100px 20px 20px 50px;
+    width: 100%;
+    height: 100Vh;
+    color: #ECECEC;
+}
+
