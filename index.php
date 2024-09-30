@@ -89,6 +89,6 @@ $logoscostructeurs = [
 
     <?php include 'components/footer.html'; ?>
 
-<script src="main.js" defer></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

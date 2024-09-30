@@ -36,6 +36,6 @@
 
     <?php include '../components/footer-loged.html'; ?>
 
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

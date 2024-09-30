@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CorsaAutomobile/style/style.css">
     <title>CorsaAutomobile / À propos</title>
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header class="apropos-header">
@@ -38,6 +38,6 @@
 
     <?php include 'components/footer.html'; ?>
 
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
