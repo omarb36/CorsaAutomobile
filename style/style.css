@@ -230,12 +230,12 @@ nav #button-connexion:hover{
 
 .container-cartes .creation{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .container-cartes .fondateur{
     font-size: 18px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .container-cartes .usines{
@@ -271,7 +271,7 @@ nav #button-connexion:hover{
     padding-top: 50px;
     background-color: #000000;
     width: 100%;
-    height: 100%;
+    height: 100Vh;
 }
 
 .voiture-1-header .modele-1{
@@ -417,16 +417,7 @@ nav #button-connexion:hover{
     margin-top: 10px;
 }
 
-.button-voir-voiture{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    padding-top: 150px;
-}
-
-.button-voir-voiture .voir-button {
+.button-voir-voiture  .voir-button{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -436,7 +427,8 @@ nav #button-connexion:hover{
     padding: 5px 15px;
     font-size: 18px;
     border-radius: 25px;
-    cursor: pointer;  
+    cursor: pointer; 
+    
 }
 
 .button-voir-voiture .voir-button:hover {

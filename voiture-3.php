@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/constructeurautomobile/style/style.css">
+    <link rel="stylesheet" href="/CorsaAutomobile/style/style.css">
     <title>CorsaAutomobile / BMW</title>
 </head>
 <body class="body-voiture">
@@ -18,7 +18,7 @@
 
 <main>
         <div class="button-voir-voiture">
-            <form action="/constructeurautomobile/voiture-2.php">
+            <form action="/CorsaAutomobile/voiture-2.php">
                 <button class="voir-button"><img src="https://img.icons8.com/?size=100&id=7811&format=png&color=000000" alt=""> Voir Fiat</button>
             </form>
         </div>
