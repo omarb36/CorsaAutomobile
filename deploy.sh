@@ -1,20 +1,64 @@
 #!/bin/bash
 
-REPERTOIRE_SOURCE=$(dirname "$(readlink -f "$0")")
-REPERTOIRE_CIBLE="/var/www/html/CorsaAutomobile"
+GIT_REPO="ssh://git@git.uha4point0.fr:22222/UHA40/fil-rouge-2024/4.0.1/omar_biber_voitures.git"
+SSH_KEY_PATH="${HOME}/.ssh/id_rsa.pub"
+TEMP_PATH="/tmp"
+XAMPP_PATH="/opt/lampp"
 
-echo "Déploiement du site CorsaAutomobile en cours..."
+if [ ! -f $SSH_KEY_PATH ]
+    then
+        echo "SSH Key not found, please generate one in id_rsa.pub and put in your gitlab profile."
+        exit 1
+    else
+        echo "SSH Key found!"
+fi; 
 
-if [ ! -d "$REPERTOIRE_CIBLE" ]; then
-    sudo mkdir -p "$REPERTOIRE_CIBLE"
-    sudo chown -R $USER:$USER "$REPERTOIRE_CIBLE"
-fi
 
-rsync -a --delete "$REPERTOIRE_SOURCE/" "$REPERTOIRE_CIBLE"
+if [ ! -d $XAMPP_PATH ]
+    then
+        echo "XAMPP not found"
+    else
+        echo "XAMPP found!"
+fi;
 
-if [ $? -eq 0 ]; then
-    echo "Déploiement réussi !"
-    echo "Votre site est accessible à l'adresse : http://localhost/CorsaAutomobile"
+
+if ! command -v git >/dev/null
+    then
+        echo "Git not found, please install it."
+        exit 1
+    else
+        echo "Git found!"
+fi;
+
+if [ -d $XAMPP_PATH/htdocs/CorsaAutomobile ]
+    then
+        read -p "Project already found, do you want to reinstall it? (y/n) " reply
+        if [ "$reply" == "y" ]
+            then
+                sudo rm -rf $XAMPP_PATH/htdocs/CorsaAutomobile
+                rm -rf $TEMP_PATH/CorsaAutomobile
+        else
+            echo "No need to do anything."
+            exit 1
+        fi;
+fi;
+
+
+if ! (git clone $GIT_REPO $TEMP_PATH/CorsaAutomobile) then
+    echo "The cloning process failed."
+    exit 1
 else
-    echo "Erreur lors du déploiement !"
+    echo "The cloning process was successful."
+    if ! (sudo mv -t $XAMPP_PATH/htdocs $TEMP_PATH/CorsaAutomobile) then
+        echo "The copy process failed."
+        exit 1
+    else
+        echo "The copy process was successful."
+        if ! (sudo /opt/lampp/lampp start) then
+            echo "The server didn't start."
+            exit 1
+        else
+            echo "Here is the link to access the website: http://localhost/CorsaAutomobile"
+        fi
+    fi;
 fi
