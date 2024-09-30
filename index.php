@@ -59,6 +59,16 @@ $logoscostructeurs = [
 
     </header>
 
+<!-- Popup Container -->
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <div id="voiture-details"></div>
+    </div>
+</div>
+
+
 <!-- SECTION CARTES -->
 
     <section id="section-cartes">
@@ -71,14 +81,14 @@ $logoscostructeurs = [
 
             <?php foreach ($constructeursFiltre as $constructeur) : ?>
 
-            <a class="voiture-lien" href="voiture-1.php" name="voiture" type="text">
+            
             <div class="api-constructeur">
                 <img src="<?php echo $logoscostructeurs[$constructeur['nom']]; ?>" alt="Logo du constructeur">
                 <h1 class="nom"><?php echo htmlspecialchars($constructeur['nom'], ENT_QUOTES, 'UTF-8'); ?></h1>
                 <h2 class="creation">Année de création : <?php echo htmlspecialchars($constructeur['creation'], ENT_QUOTES, 'UTF-8'); ?></h2>
                 <h2 class="fondateur">Fondataur(s) : <?php echo htmlspecialchars($constructeur['fondateur'], ENT_QUOTES, 'UTF-8'); ?></h2>
                 <h2 class="pays">Pays : <?php echo htmlspecialchars($constructeur['pays'], ENT_QUOTES, 'UTF-8'); ?></h2>
-                </a>
+                <button class="voir-voitures" data-constructeur="<?php echo $constructeur['id']; ?>">Voir les voitures</button>
             </div>
            
             <?php endforeach; ?>
@@ -86,7 +96,7 @@ $logoscostructeurs = [
     </section>
 
 <!-- FOOTER -->
-
+ 
     <?php include 'components/footer.html'; ?>
 
 <script src="js/main.js" defer></script>
