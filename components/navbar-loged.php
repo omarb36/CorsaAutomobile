@@ -1,6 +1,7 @@
 <?php 
 session_start();
 ?>
+
 <nav>
     <div class="logo">
         <img src="../img/logo.png" alt="Logo de CorsaAutomobile">
@@ -10,8 +11,8 @@ session_start();
     <div class="links">
         <ul>
             <li><a href="../espace-membres/index-connect.php">Accueil</a></li>
-            <li><a href="credits.php">Crédits</a></li>
-            <li><a href="apropos.php">À propos</a></li>
+            <li><a href="../espace-membres/credits-loged.php">Crédits</a></li>
+            <li><a href="../espace-membres/apropos-loged.php">À propos</a></li>
         </ul>
     </div>
 

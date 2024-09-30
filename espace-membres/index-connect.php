@@ -76,8 +76,10 @@ $logoscostructeurs = [
     <?php endforeach; ?>
 </div>
 </section>
-
     </main>
-    
+
+    <!-- FOOTER -->
+
+    <?php include '../components/footer-loged.html'; ?> 
 </body>
 </html>

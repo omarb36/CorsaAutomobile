@@ -259,3 +259,124 @@ header .span-user{
     color: #ECECEC;
 }
 
+/* PAGE CRÉDITS */
+
+.section-credits {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100Vh;
+    color: #ECECEC;
+}
+
+.section-credits .developpeur h1 {
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.section-credits .developpeur p{
+    padding: 20px 20px;
+}
+
+.section-credits .technos ul {
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.section-credits .sources-api ul {
+    list-style: none;
+    padding: 20px 20px;
+}
+
+.section-credits .sources-api a {
+    color: #ECECEC;
+    
+}
+
+.section-credits .sources-api a:hover {
+    color: #adadad;
+    transition: 0.3s;
+}
+
+/* PAGE À PROPOS */
+
+
+
+.section-apropos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100Vh;
+}
+
+.section-apropos .titre h1 {
+    font-size: 34px;
+    color: #ECECEC;
+    padding-bottom: 40px;
+}
+
+
+.section-apropos .paragraph p {
+    font-size: 18px;
+    color: #ECECEC;
+    padding-bottom: 40px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* FOOTER */
+
+footer .contenu-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 20Vh;
+    background-color: black;
+}
+
+.contenu-footer .droits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.contenu-footer .droits img {
+    width: 40px;
+}
+
+.contenu-footer .droits h1 {
+    font-size: 19px;
+    color: #ECECEC;
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+
+.contenu-footer .links-parent ul{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    list-style: none;
+}
+
+.contenu-footer .links-parent a{
+    color: #ECECEC;
+    text-decoration: none;
+    margin-right: 34px;
+}
+.contenu-footer .links-parent a:hover{
+    color: #bababa;
+    transition: 0.3s;
+}
