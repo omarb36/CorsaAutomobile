@@ -1,6 +1,6 @@
 #!/bin/bash
 
-GIT_REPO="ssh://git@git.uha4point0.fr:22222/UHA40/fil-rouge-2024/4.0.1/omar_biber_voitures.git"
+GIT_REPO="https://github.com/omarb36/CorsaAutomobile.git"
 SSH_KEY_PATH="${HOME}/.ssh/id_rsa.pub"
 TEMP_PATH="/tmp"
 XAMPP_PATH="/opt/lampp"
@@ -30,13 +30,13 @@ if ! command -v git >/dev/null
         echo "Git found!"
 fi;
 
-if [ -d $XAMPP_PATH/htdocs/CorsaAutomobile ]
+if [ -d $XAMPP_PATH/htdocs/corsatest ]
     then
         read -p "Project already found, do you want to reinstall it? (y/n) " reply
         if [ "$reply" == "y" ]
             then
-                sudo rm -rf $XAMPP_PATH/htdocs/CorsaAutomobile
-                rm -rf $TEMP_PATH/CorsaAutomobile
+                sudo rm -rf $XAMPP_PATH/htdocs/corsatest
+                rm -rf $TEMP_PATH/corsatest
         else
             echo "No need to do anything."
             exit 1
@@ -44,12 +44,12 @@ if [ -d $XAMPP_PATH/htdocs/CorsaAutomobile ]
 fi;
 
 
-if ! (git clone $GIT_REPO $TEMP_PATH/CorsaAutomobile) then
+if ! (git clone $GIT_REPO $TEMP_PATH/corsatest) then
     echo "The cloning process failed."
     exit 1
 else
     echo "The cloning process was successful."
-    if ! (sudo mv -t $XAMPP_PATH/htdocs $TEMP_PATH/CorsaAutomobile) then
+    if ! (sudo mv -t $XAMPP_PATH/htdocs $TEMP_PATH/corsatest) then
         echo "The copy process failed."
         exit 1
     else
@@ -58,7 +58,7 @@ else
             echo "The server didn't start."
             exit 1
         else
-            echo "Here is the link to access the website: http://localhost/CorsaAutomobile"
+            echo "Here is the link to access the website: http://localhost/corsatest"
         fi
     fi;
 fi
