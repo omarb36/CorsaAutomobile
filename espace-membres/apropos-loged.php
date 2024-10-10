@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CorsaAutomobile/style/style.css">
+    <link rel="stylesheet" href="/CorsaAutomobile/style/loged.css">
     <title>CorsaAutomobile / À propos</title>
-    <script src="js/main.js" defer></script>
 </head>
+
 <body>
     <header class="apropos-header">
-        <video autoplay muted loop disablePictureInPicture id="background-video" controlsList="nodownload nofullscreen noremoteplayback">
-            <source src="img/bmw-m4.mp4" type="video/mp4">
-        </video>
+        
 
     <!-- BARRE DE NAVIGATION -->
 
-    <?php include 'components/navbar.html'; ?>
+    <?php include '../components/navbar-loged.php'; ?>
 
      <!-- SECTION A PROPOS -->
 
@@ -36,7 +34,7 @@
 
     <!-- FOOTER -->
 
-    <?php include 'components/footer.html'; ?>
+    <?php include '../components/footer-loged.html'; ?>
 
     <script src="js/main.js" defer></script>
 </body>
